@@ -1,0 +1,125 @@
+@font-face {
+    font-family: franklin;
+    src: url(libre_franklin/LibreFranklin-Regular.ttf);
+}
+
+@font-face {
+    font-family: franklin_bold;
+    src: url(libre_franklin/LibreFranklin-Bold.ttf);
+}
+
+@font-face {
+    font-family: tenor;
+    src: url(libre_franklin/TenorSans-Regular.ttf);
+}
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 37px 120px;
+    border-bottom: 1.4px solid #e6e6e6;
+    margin-bottom: 59px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li {
+    margin: 0px 20px;
+    list-style-type: none;
+}
+
+.menu li a {
+    font-family: franklin;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.prev_container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.img_mountains {
+    width: 721px;
+    height: 474px;
+}
+
+.illustration {
+    font-family: franklin;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.prev_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.jap_txt {
+    font-family: tenor;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 27px;
+}
+
+.dop_text {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 28px;
+    font-family: franklin;
+}
+
+.by {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: franklin_bold;
+}
+
+.prev_text p {
+    margin: 0px;
+}
+
+.content {
+    font-family: tenor;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.table_one {
+    padding: 60px 120px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 387px);
+    gap: 20px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.img_col {
+    height: 254px;
+    width: 387px;
+    margin-bottom: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 387px;
+    margin-bottom: 25px;
+}
