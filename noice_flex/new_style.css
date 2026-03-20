@@ -1,0 +1,290 @@
+@font-face {
+    font-family: franklin;
+    src: url(libre_franklin/LibreFranklin-Regular.ttf);
+}
+
+@font-face {
+    font-family: franklin_bold;
+    src: url(libre_franklin/LibreFranklin-Bold.ttf);
+}
+
+@font-face {
+    font-family: tenor;
+    src: url(libre_franklin/TenorSans-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.head_flex {
+    display: flex;
+    padding: 37px 120px;;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1.4px solid #e6e6e6;
+    margin-bottom: 59px;
+}
+
+.head_menu ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+}
+
+.head_menu li {
+    margin: 0px 20px;
+    list-style-type: none;
+}
+
+.head_menu li a {
+    font-family: franklin;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.size_36 {
+    font-size: 36px;
+}
+
+.size_20 {
+    font-size: 20px;
+}
+
+.flex_cont_first {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 30px 120px;
+}
+
+.col_first {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.main_text {
+    font-family: tenor;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 27px;
+}
+
+.additional_text {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 28px;
+    font-family: franklin;
+}
+
+.by_ {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: franklin_bold;
+}
+
+.illustration {
+    font-family: franklin;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+/* контейнеры таблиц */
+.second_table, .third_table, .fourth_table {
+    margin: 60px 120px;
+}
+
+.border {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/* 6 постов */
+.flex_cont_second{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex_cont_second .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc((100% - 2 * 20px) / 3);
+    min-width: 240px;
+    margin-bottom: 98px;
+}
+
+.flex_cont_second .col img {
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+
+/* 8 постов */
+
+.flex_cont_third {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex_cont_third .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc((100% - 3 * 20px) / 4);
+    min-width: 220px;
+    margin-bottom: 20px;
+}
+
+.flex_cont_third .col img {
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+
+/* 4 поста */
+.flex_cont_fourth{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex_cont_fourth .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc((100% - 20px) / 2);
+    min-width: 280px;
+    margin-bottom: 20px;
+}
+
+.flex_cont_fourth .col img {
+    padding-bottom: 7px;
+    padding-top: 20px;
+}
+
+/* btn */
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.button_view {
+    background-color: #00000000;
+    padding: 21px 26px;
+    cursor: pointer;
+    margin-bottom: 90px;
+}
+
+.button_view p {
+    text-transform: uppercase;
+    font-family: franklin;
+}
+
+
+/* footer */
+
+.foot {
+    background-color: #141414;
+    color: #FFFFFF;
+    font-family: franklin;
+}
+
+.footer_head {
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    justify-content: start;
+    margin: 90px 120px;
+    border-bottom: 1px solid #4D4D4D;
+}
+
+.copyrate {
+    color: #666666;
+    font-family: franklin;
+    font-size: 10px;
+    margin-left: 15px;
+    align-content: flex-end;
+    text-transform: uppercase;
+}
+
+/* таблица 1 */
+.first_table {
+    margin: 0px 120px;
+}
+
+
+.flex_row_first {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+.col_category {
+    flex: 1 1 180px;
+    margin-bottom: 40px;
+}
+
+.category {
+    padding: 15px 0px;
+}
+.category a {
+    font-family: franklin;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.email_send form {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+}
+
+.send {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: franklin;
+    text-transform: uppercase;
+    font-size: 10px;
+    border: none;
+    padding: 18px 24px;
+    cursor: pointer;
+}
+
+
+.email_send form input{
+    font-family: franklin;
+    font-size: 12px;
+    padding: 18px 24px;
+    border: none;
+}
+
+.email_send form input::placeholder {
+    text-transform: uppercase;
+}
+
+.email_send .illustration {
+    margin-bottom: 21px;
+}
+
+/* 2 таблицв */
+.second_table_flex {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    padding-right: 530px;
+}
+
+.col_footer {
+    flex: 1 1 calc((100% - 2 * 15px) / 3);
+    
+}
