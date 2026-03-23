@@ -19,6 +19,8 @@
     box-sizing: border-box;
 }
 
+/* flex: grow+ shrink- basis */
+
 .head_flex {
     display: flex;
     padding: 37px 120px;;
@@ -63,9 +65,20 @@
     margin: 30px 120px;
 }
 
+.img_mountain {
+    flex: 1.2 1 0;
+    /* min-width: 0; */
+}
+
+.img_mountain img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .col_first {
-    display: flex;
-    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
     padding-top: 5px;
 }
 
@@ -94,6 +107,11 @@
     font-size: 10px;
     text-transform: uppercase;
     color: #999999;
+}
+
+.flex_cont_first img {
+    padding-bottom: 7px;
+    padding-top: 10px;
 }
 
 /* контейнеры таблиц */
