@@ -77,3 +77,16 @@ btnClear.onclick = function() {
     firstForm.value = "";
     secondForm.value = "";
 };
+
+////////////////////////////////////////////////////
+let input_3 = document.getElementById('input_3');
+let btnLock = document.getElementById('btn_lock');
+let btnUnlock = document.getElementById('btn_unlock');
+
+btnLock.onclick = function() {
+    input_3.disabled = true;
+};
+
+btnUnlock.onclick = function() {
+    input_3.disabled = false;
+};
