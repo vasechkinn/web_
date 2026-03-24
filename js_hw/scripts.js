@@ -60,5 +60,20 @@ btnSend.onclick = function() {
 let firstForm = document.getElementById("input_first");
 let secondForm = document.getElementById("input_second");
 let buff = '';
+let btnClear = document.getElementById('btn_clear')
 
-let btnReverse = document
+let btnReverse = document.getElementById('btn_reverse')
+btnReverse.onclick = function() {
+    if (firstForm.value === "" && secondForm.value === "") {
+        alert('заполните хотя бы одно поле');
+        return;
+    }
+    buff = firstForm.value;
+    firstForm.value = secondForm.value;
+    secondForm.value = buff;
+};
+
+btnClear.onclick = function() {
+    firstForm.value = "";
+    secondForm.value = "";
+};
