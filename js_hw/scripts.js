@@ -90,3 +90,51 @@ btnLock.onclick = function() {
 btnUnlock.onclick = function() {
     input_3.disabled = false;
 };
+
+////////////////////////////////////////////////////
+let n5 = document.createElement('h1');
+n5.textContent = '№5';
+document.body.append(n5);
+
+let divSquare = document.createElement('div');
+divSquare.classList.add('square');
+
+divSquare.addEventListener('mouseover', () =>{
+    divSquare.innerHTML = '<p>наведено (◕‿◕)</p>';
+})
+divSquare.addEventListener('mouseout', () =>{
+    divSquare.textContent = '';
+})
+
+document.body.append(divSquare);
+
+////////////////////////////////////////////////////
+let n6 = document.createElement('h1');
+n6.textContent = '№6';
+document.body.append(n6);
+
+let imgOn = document.createElement('img');
+imgOn.classList.add('img_n6')
+imgOn.src = 'img/on.png';
+document.body.append(imgOn);
+
+let btnOff = document.createElement('button');
+btnOff.classList.add('off');
+btnOff.textContent = 'off';
+
+btnOff.addEventListener('click', () => {
+    if (imgOn.src.includes('on.png')){
+        imgOn.src = 'img/orig.webp';
+        btnOff.classList.remove('off');
+        btnOff.classList.add('on');
+        btnOff.textContent = 'on';
+    }
+    else {
+        imgOn.src = 'img/on.png';
+        btnOff.classList.remove('on');
+        btnOff.classList.add('off');
+        btnOff.textContent = 'off';
+    }
+    
+})
+document.body.append(btnOff);
