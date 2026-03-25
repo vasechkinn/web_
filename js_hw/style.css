@@ -28,3 +28,11 @@
     height: 360px;
     width: 360px;
 }
+
+.input_first {
+    padding: 10px;
+}
+
+.ul_n10 li {
+    cursor: pointer;
+}
