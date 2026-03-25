@@ -250,5 +250,5 @@ let listLi = document.querySelectorAll('.ul_n10 li');
 listLi.forEach(function(elem) {
     elem.addEventListener('click', function(elem){
         this.remove()
-    })
+    });
 })
