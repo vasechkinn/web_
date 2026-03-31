@@ -1,0 +1,70 @@
+img {
+    height: 250px;
+    width: 390px;
+    margin: 10px;
+}
+
+.n7 {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 229, 194);
+    margin: 10px;
+}
+
+.class_first {
+    height: 200px;
+    width: 200px;
+    border: solid;
+    margin: 10px;
+}
+
+.color_first {
+    background-color: aquamarine;
+}
+
+.color_second {
+    background-color: rgb(127, 255, 153);
+}
+
+.n10 {
+    border: solid 0.5px;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(255, 229, 194);
+}
+
+.n9 {
+    color: brown;
+    background-color: aliceblue;
+    border: 1px solid;
+}
+
+p {
+    margin: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100% !important;
+    bottom: auto !important;
+    transform: translateY(0) !important;
+}
+
+.black {
+    color: black;
+}
+
+.brown {
+    color: rgb(150, 20, 20);
+}
+
+.blue {
+    color:rgb(1, 45, 190);
+}
+
+.green {
+    color:rgb(0, 103, 21);
+}
+input {
+    margin: 10px;
+}
