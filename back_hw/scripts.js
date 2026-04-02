@@ -26,7 +26,7 @@ function render_page(users) {
                 <img src="${user.avatar_url}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${user.login}</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <p class="card-text">${user.folowers}</p>
                 </div>
             </div>
             `;
@@ -41,6 +41,14 @@ function render_page(users) {
 fetch('https://api.github.com/users')
     .then((response) => response.json())
     .then((users) => {
+        // рендер отрабатывает раньше окончания цикла
+        users.forEach(user => {
+            fetch(`https://api.github.com/users/${user.login}/followers`)
+            .then(response => response.json())
+            .then(arrUsers => {
+                user.folowers = arrUsers.length;
+            })
+        })
         allUsers = users;
         console.log(allUsers);
         render_page(allUsers);
@@ -61,7 +69,7 @@ btnAsc.addEventListener('click', () => {
     ascUsers.sort(
         (a, b) => {
             let res = a.login.localeCompare(b.login);
-            console.log(res);
+            // console.log(res);
             return res;
     });
 
@@ -75,7 +83,7 @@ btnDesc.addEventListener('click', () => {
     descUsers.sort(
         (a, b) => {
             let res = b.login.localeCompare(a.login);
-            console.log(res);
+            // console.log(res);
             return res;
         });
     render_page(descUsers);    
