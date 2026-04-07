@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Доступные маршруты</h1>
+    <ul>
+        <li><a href="/items/1,2,3,4">/items/1,2,3,4</a></li>
+        <li><a href="/users/Max/39">/users/Max/39</a></li>
+        <li><a href="/users?name=Max&age=39">/users?name=Max&age=39</a></li>
+        <li><a href="/country/Russia?limit=3">
+                /country/Russia?limit=3
+            </a>
+            <ul>
+                Список доступных стран
+                <li><a href="/country/USA?limit=3"> USA </a></li>
+                <li><a href="/country/Germany?limit=3"> Germany </a></li>
+                <li><a href="/country/France?limit=3"> France </a></li>
+                <li><a href="/country/Japan?limit=3"> Japan </a></li>
+                <li><a href="/country/Brazil?limit=3"> Brazil </a></li>
+                <li><a href="/country/Australia?limit=3"> Australia </a></li>
+                <li><a href="/country/India?limit=3"> India </a></li>
+            </ul>
+        </li>
+    </ul>
+    <p>Или откройте <a href="/docs">документацию Swagger</a></p>
+
+</body>
+</html>
